@@ -2,12 +2,12 @@ import mongoose from "mongoose"
 
 
 const refreshTokenSchema = new mongoose.Schema({
-    token: {
+    accessToken: {
         type: String,
         required: true,
         unique: true
     },
-    user: {
+    userId: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref:"User"

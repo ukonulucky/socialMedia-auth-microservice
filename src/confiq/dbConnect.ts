@@ -6,7 +6,7 @@ const MUNGU_URL = process.env.MUNGU_DB
 
 const dbConnectFunc = async () => { 
     try {
-        logger.warn("DB connection started")
+        logger.info("DB connection started")
         if (!MUNGU_URL) { 
             logger.warn("MUNGU_DB error:", "No MUNGU_URL found")
             throw new Error("No MUNGU_URL found")

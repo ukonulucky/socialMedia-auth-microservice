@@ -1,5 +1,7 @@
+import mongoose from "mongoose"
+
 export type userSchemaType = {
-    _id?: string
+    _id?: MongooseIdType
     userName: string,
     email: string,
     createdAt?: string,
@@ -13,9 +15,18 @@ export type userRegisterType = {
     password: string,
 
 }
+export type userLoginType = {
+    email: string,
+    password: string,
+
+}
+export type MongooseIdType = mongoose.Types.ObjectId;
 
 export type generateTokenType = {
     accessToken : string ,
         expiresAt :Date,
-        refreshToken : string
+        userId : MongooseIdType
 }
+
+
+

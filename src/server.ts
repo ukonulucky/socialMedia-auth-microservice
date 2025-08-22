@@ -7,6 +7,7 @@ import dbConnectFunc from "./confiq/dbConnect"
 import helmet from "helmet"
 import { RateLimiterRedis } from "rate-limiter-flexible"
 import { connectRedisDbFunc } from "./confiq/connectRedis"
+import userRouter from "./routes/userRoutes"
 
 
 
@@ -43,11 +44,29 @@ app.use(async (req, res, next) => {
    }
 })
 
-app.listen(async () => { 
+
+app.use((req, res, next) => { 
+    logger.info(`request from ${req.url} having a method of ${req.method}`)
+    next()
+})
+
+//endpoints
+
+app.get("/", (req, res) => { 
+    console.log("Root route accessed");
+    res.send(`Server running on port ${PORT}`)
+ })
+app.use("/api/auth", userRouter)
+
+
+app.listen(PORT, async() => { 
     try {
      
-        await dbConnectFunc()
-        logger.warn(`App started at port ${PORT}`)
+        const res = await dbConnectFunc()
+        if (res) { 
+            logger.info("MongoDb  connected successfully")
+        }
+        logger.info(`App started at port ${PORT}`)
         
     } catch (error) {
         logger.error(`Application error, ${error}`)
