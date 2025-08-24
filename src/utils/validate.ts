@@ -1,25 +1,26 @@
 import Joi from "joi"
-import { userLoginType, userRegisterType } from "../types/appTypes"
+import { createPostType } from "../types/appTypes"
 
 
-export const registerValidation = (data: userRegisterType) => { 
 
+
+
+export const createPostValidation = (data: createPostType) => { 
     const schema = Joi.object({
-        userName: Joi.string().min(3).max(15).required(),
-        email: Joi.string().email().required(),
-        password:Joi.string().min(5).max(15).required()
+        content: Joi.string().email().required()
     })
-
     return schema.validate(data)
-
 }
-export const loginValidation = (data: userLoginType) => { 
-
+export const getSinglePostValidation = (data: createPostType) => { 
     const schema = Joi.object({
-        email: Joi.string().email().required(),
-        password:Joi.string().min(5).max(15).required()
+        postId: Joi.string().email().required()
     })
-
     return schema.validate(data)
+}
 
+export const deleteSinglePostValidation = (data: createPostType) => { 
+    const schema = Joi.object({
+        postId: Joi.string().email().required()
+    })
+    return schema.validate(data)
 }

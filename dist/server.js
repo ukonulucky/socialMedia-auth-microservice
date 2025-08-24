@@ -12,6 +12,7 @@ const dbConnect_1 = __importDefault(require("./confiq/dbConnect"));
 const helmet_1 = __importDefault(require("helmet"));
 const rate_limiter_flexible_1 = require("rate-limiter-flexible");
 const connectRedis_1 = require("./confiq/connectRedis");
+const postRoutes_1 = __importDefault(require("./routes/postRoutes"));
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 5000;
 console.log("environment variables", process.env.REDIS_URL);
@@ -43,10 +44,23 @@ app.use(async (req, res, next) => {
         });
     }
 });
-app.listen(async () => {
+app.use((req, res, next) => {
+    logger_1.default.info(`request from ${req.url} having a method of ${req.method}`);
+    next();
+});
+//endpoints
+app.get("/", (req, res) => {
+    console.log("Root route accessed");
+    res.send(`Server running on port ${PORT}`);
+});
+app.use("/api/auth", postRoutes_1.default);
+app.listen(PORT, async () => {
     try {
-        await (0, dbConnect_1.default)();
-        logger_1.default.warn(`App started at port ${PORT}`);
+        const res = await (0, dbConnect_1.default)();
+        if (res) {
+            logger_1.default.info("MongoDb  connected successfully");
+        }
+        logger_1.default.info(`App started at port ${PORT}`);
     }
     catch (error) {
         logger_1.default.error(`Application error, ${error}`);

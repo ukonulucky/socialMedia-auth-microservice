@@ -7,7 +7,7 @@ import dbConnectFunc from "./confiq/dbConnect"
 import helmet from "helmet"
 import { RateLimiterRedis } from "rate-limiter-flexible"
 import { connectRedisDbFunc } from "./confiq/connectRedis"
-import userRouter from "./routes/userRoutes"
+import userRouter from "./routes/postRoutes"
 
 
 
