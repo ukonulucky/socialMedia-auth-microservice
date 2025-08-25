@@ -1,8 +1,11 @@
-import { RequestHandler } from "express";
-import { MiddlewareOptions } from "mongoose";
+import { NextFunction, Request, RequestHandler, Response } from "express";
+
+interface CustomRequest extends Request {
+    userId?: string;
+}
 
 
-export const authMiddleware: RequestHandler = (req, res, next) => { 
+export const authMiddleware: RequestHandler = (req: CustomRequest, res:Response, next: NextFunction) => { 
     const userId = req.headers["x-user-id"]
     if (!userId) {
         return res.status(401).json({

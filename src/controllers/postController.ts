@@ -1,13 +1,15 @@
-import { RequestHandler } from "express";
+import { Request, RequestHandler, Response } from "express";
 import logger from "../utils/logger";
-import userModel from "../model/postSchema";
 import { createPostValidation, deleteSinglePostValidation, getSinglePostValidation } from "../utils/validate";
 import postModel from "../model/postSchema";
 
+interface CustomRequest extends Request {
+    userId?: string;
+}
 
 
 // create post
-export const createPostController: RequestHandler<{}, {}> = async (req, res) => { 
+export const createPostController : RequestHandler = async (req:CustomRequest, res:Response) => { 
     logger.info("user hit the create post controller")
     try {
         // validate user input

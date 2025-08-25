@@ -856,3 +856,48 @@
 {"level":"info","message":"user hit the login controller","service":"auth-service","timestamp":"2025-08-22T01:07:32.837Z"}
 {"level":"warn","message":"user logged in successfully","service":"auth-service","timestamp":"2025-08-22T01:07:32.939Z"}
 {"level":"warn","message":"new refresh token schema created for the login controller","service":"auth-service","timestamp":"2025-08-22T01:07:32.976Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T00:18:38.274Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T00:18:38.292Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T00:18:38.305Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T00:18:38.853Z"}
+{"level":"info","message":"App started at port 8000","service":"post-service","timestamp":"2025-08-25T00:18:38.853Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T00:19:23.405Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T00:19:23.418Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T00:19:23.422Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T00:19:23.901Z"}
+{"level":"info","message":"App started at port 8000","service":"post-service","timestamp":"2025-08-25T00:19:23.902Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T00:20:13.046Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T00:20:13.058Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T00:20:13.064Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T00:20:13.597Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T00:20:13.597Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:09:24.362Z"}
+{"level":"info","message":"request from /api/post having a method of POST","service":"post-service","timestamp":"2025-08-25T03:09:24.403Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:09:56.827Z"}
+{"level":"info","message":"request from /api/post/register having a method of POST","service":"post-service","timestamp":"2025-08-25T03:09:56.884Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:11:03.741Z"}
+{"level":"info","message":"request from /api/post/register having a method of POST","service":"post-service","timestamp":"2025-08-25T03:11:03.750Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:11:44.652Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:11:44.660Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T03:12:54.991Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T03:12:55.007Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T03:12:55.014Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T03:12:55.670Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T03:12:55.670Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:13:05.379Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:13:05.382Z"}
+{"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:13:05.383Z"}
+{"0":"\"","1":"c","10":"i","11":"s","12":" ","13":"r","14":"e","15":"q","16":"u","17":"i","18":"r","19":"e","2":"o","20":"d","3":"n","4":"t","5":"e","6":"n","7":"t","8":"\"","9":" ","level":"error","message":"create post error","service":"post-service","timestamp":"2025-08-25T03:13:05.385Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:13:49.685Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:13:49.687Z"}
+{"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:13:49.688Z"}
+{"0":"\"","1":"c","10":"m","11":"u","12":"s","13":"t","14":" ","15":"b","16":"e","17":" ","18":"a","19":" ","2":"o","20":"v","21":"a","22":"l","23":"i","24":"d","25":" ","26":"e","27":"m","28":"a","29":"i","3":"n","30":"l","4":"t","5":"e","6":"n","7":"t","8":"\"","9":" ","level":"error","message":"create post error","service":"post-service","timestamp":"2025-08-25T03:13:49.689Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T03:14:28.634Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T03:14:28.647Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T03:14:28.649Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T03:14:29.313Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T03:14:29.313Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:15:03.013Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:15:03.016Z"}
+{"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:15:03.016Z"}
+{"level":"info","message":"post created","service":"post-service","timestamp":"2025-08-25T03:15:03.068Z"}
