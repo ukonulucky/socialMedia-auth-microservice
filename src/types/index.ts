@@ -1,7 +1,21 @@
+import { Request } from "express";
+import { Redis } from "ioredis"
 import mongoose from "mongoose"
 
+export interface CustomRequest extends Request {
+    redisClient?: Redis;
+}
 
 
+export interface CustomDeleteRequest extends Request {
+    redisClient?: Redis;
+    userId?: string
+}
+
+
+interface CustomCreatePostRequest extends Request {
+    userId?: string;
+}
 
 export type postSchemaType = {
  userId: MongooseIdType

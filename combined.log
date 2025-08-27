@@ -901,3 +901,1158 @@
 {"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:15:03.016Z"}
 {"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:15:03.016Z"}
 {"level":"info","message":"post created","service":"post-service","timestamp":"2025-08-25T03:15:03.068Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:26:55.825Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:26:55.850Z"}
+{"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:26:55.854Z"}
+{"code":11000,"errorLabelSet":{},"errorResponse":{"code":11000,"errmsg":"E11000 duplicate key error collection: test.posts index: content_1 dup key: { content: \"First post created\" }","index":0,"keyPattern":{"content":1},"keyValue":{"content":"First post created"}},"index":0,"keyPattern":{"content":1},"keyValue":{"content":"First post created"},"level":"error","message":"Post creation error E11000 duplicate key error collection: test.posts index: content_1 dup key: { content: \"First post created\" }","service":"post-service","stack":"MongoServerError: E11000 duplicate key error collection: test.posts index: content_1 dup key: { content: \"First post created\" }\n    at InsertOneOperation.execute (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/operations/insert.ts:88:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async tryOperation (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/operations/execute_operation.ts:283:14)\n    at async executeOperation (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/operations/execute_operation.ts:115:12)\n    at async Collection.insertOne (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/collection.ts:286:12)","timestamp":"2025-08-25T03:26:55.944Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:26:58.313Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:26:58.317Z"}
+{"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:26:58.317Z"}
+{"code":11000,"errorLabelSet":{},"errorResponse":{"code":11000,"errmsg":"E11000 duplicate key error collection: test.posts index: content_1 dup key: { content: \"First post created\" }","index":0,"keyPattern":{"content":1},"keyValue":{"content":"First post created"}},"index":0,"keyPattern":{"content":1},"keyValue":{"content":"First post created"},"level":"error","message":"Post creation error E11000 duplicate key error collection: test.posts index: content_1 dup key: { content: \"First post created\" }","service":"post-service","stack":"MongoServerError: E11000 duplicate key error collection: test.posts index: content_1 dup key: { content: \"First post created\" }\n    at InsertOneOperation.execute (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/operations/insert.ts:88:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async tryOperation (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/operations/execute_operation.ts:283:14)\n    at async executeOperation (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/operations/execute_operation.ts:115:12)\n    at async Collection.insertOne (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/collection.ts:286:12)","timestamp":"2025-08-25T03:26:58.351Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T03:28:20.805Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T03:28:20.818Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T03:28:20.827Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T03:28:21.409Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T03:28:21.410Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T03:28:30.695Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T03:28:30.707Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T03:28:30.732Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T03:28:31.204Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T03:28:31.204Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T03:28:45.330Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T03:28:45.343Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T03:28:45.345Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T03:28:45.853Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T03:28:45.854Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:36:53.250Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:36:53.290Z"}
+{"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:36:53.292Z"}
+{"code":11000,"errorLabelSet":{},"errorResponse":{"code":11000,"errmsg":"E11000 duplicate key error collection: test.posts index: content_1 dup key: { content: \"First post created\" }","index":0,"keyPattern":{"content":1},"keyValue":{"content":"First post created"}},"index":0,"keyPattern":{"content":1},"keyValue":{"content":"First post created"},"level":"error","message":"Post creation error E11000 duplicate key error collection: test.posts index: content_1 dup key: { content: \"First post created\" }","service":"post-service","stack":"MongoServerError: E11000 duplicate key error collection: test.posts index: content_1 dup key: { content: \"First post created\" }\n    at InsertOneOperation.execute (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/operations/insert.ts:88:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async tryOperation (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/operations/execute_operation.ts:283:14)\n    at async executeOperation (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/operations/execute_operation.ts:115:12)\n    at async Collection.insertOne (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongodb/src/collection.ts:286:12)","timestamp":"2025-08-25T03:36:53.371Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T03:39:17.810Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T03:39:17.834Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T03:39:17.845Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T03:39:18.413Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T03:39:18.413Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:39:28.772Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:39:28.777Z"}
+{"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:39:28.778Z"}
+{"level":"info","message":"post created","service":"post-service","timestamp":"2025-08-25T03:39:28.825Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:39:36.926Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:39:36.933Z"}
+{"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:39:36.934Z"}
+{"level":"info","message":"post created","service":"post-service","timestamp":"2025-08-25T03:39:36.986Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T03:39:39.035Z"}
+{"level":"info","message":"request from /api/post/createPost having a method of POST","service":"post-service","timestamp":"2025-08-25T03:39:39.039Z"}
+{"level":"info","message":"user hit the create post controller","service":"post-service","timestamp":"2025-08-25T03:39:39.039Z"}
+{"level":"info","message":"post created","service":"post-service","timestamp":"2025-08-25T03:39:39.076Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T12:19:39.693Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T12:19:39.708Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T12:19:39.723Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T12:19:40.292Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T12:19:40.293Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T12:48:50.037Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T12:48:50.067Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T12:48:50.089Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T12:48:50.654Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T12:48:50.655Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T13:05:15.332Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T13:05:15.355Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T13:05:15.367Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T13:05:15.920Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T13:05:15.921Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T13:05:32.801Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T13:05:32.812Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T13:05:32.815Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T13:05:33.292Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T13:05:33.293Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T13:05:37.126Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T13:05:37.138Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T13:05:37.143Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T13:05:37.597Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T13:05:37.597Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:10:40.015Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:10:40.034Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:10:40.044Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:10:40.634Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:10:40.635Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:11:18.438Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:11:18.452Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:11:18.456Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:11:18.927Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:11:18.928Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:11:24.672Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:11:24.682Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:11:24.683Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:11:25.157Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:11:25.157Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:14:03.497Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:14:03.509Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:14:03.514Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:14:04.071Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:14:04.071Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:14:11.255Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:14:11.269Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:14:11.272Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:14:11.752Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:14:11.753Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:15:13.304Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:15:13.318Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:15:13.326Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:15:13.836Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:15:13.837Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:15:17.746Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:15:17.764Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:15:17.766Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:15:31.452Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:15:31.464Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:15:31.468Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:15:31.970Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:15:31.971Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:18:51.297Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:18:51.314Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:18:51.322Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:18:51.958Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:18:51.960Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:23:26.908Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:23:26.934Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:23:30.461Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:23:30.470Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:23:30.472Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:23:31.040Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:23:31.040Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:23:48.433Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:23:48.442Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:23:48.444Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:23:48.952Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:23:48.953Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:23:50.939Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:23:50.955Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:23:50.958Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:23:51.472Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:23:51.473Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:25:24.402Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:25:24.420Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:25:24.427Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:25:31.117Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:25:31.130Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:25:31.132Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:25:31.933Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:25:31.934Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:25:38.651Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:25:38.676Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:25:38.682Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:25:39.151Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:25:39.151Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:25:41.839Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:25:41.857Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:25:41.860Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:25:42.303Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:25:42.304Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:25:51.237Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:25:51.248Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:25:51.249Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:25:54.342Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:25:54.355Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:25:54.356Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:25:54.827Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:25:54.827Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:25:57.301Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:25:57.314Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:25:57.316Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:25:57.795Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:25:57.795Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:26:02.679Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:26:02.691Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:26:02.693Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:26:03.161Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:26:03.161Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:26:10.093Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:26:10.105Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:26:10.106Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:26:10.592Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:26:10.593Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:26:21.166Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:26:21.177Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:26:21.179Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:26:21.717Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:26:21.718Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:26:27.867Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:26:27.877Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:26:27.880Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:26:28.389Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:26:28.389Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:26:31.179Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:26:31.190Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:26:31.191Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:26:31.657Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:26:31.657Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:26:44.328Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:26:44.338Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:26:44.340Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:26:44.964Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:26:44.964Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:28:00.419Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:28:00.431Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:28:00.432Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:28:00.931Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:28:00.932Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:28:03.037Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:28:03.049Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:28:03.050Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:28:03.604Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:28:03.605Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:28:07.752Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:28:07.763Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:28:07.765Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:28:08.218Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:28:08.221Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:28:33.399Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T16:28:33.405Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T16:28:33.406Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:30:14.606Z"}
+{"level":"info","message":"request from /api/post/getPost having a method of GET","service":"post-service","timestamp":"2025-08-25T16:30:14.612Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:30:30.563Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T16:30:30.566Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:31:11.078Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:31:11.098Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:31:11.114Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:31:11.680Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:31:11.680Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:32:13.151Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T16:32:13.157Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:40:19.508Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:40:19.531Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:40:19.549Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:40:20.097Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:40:20.097Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:40:24.214Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T16:40:24.219Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T16:40:24.220Z"}
+{"0":"\"","1":"p","10":"s","11":" ","12":"r","13":"e","14":"q","15":"u","16":"i","17":"r","18":"e","19":"d","2":"o","3":"s","4":"t","5":"I","6":"d","7":"\"","8":" ","9":"i","level":"error","message":"get single post error","service":"post-service","timestamp":"2025-08-25T16:40:24.223Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:41:10.734Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:41:10.747Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:41:10.749Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:41:11.430Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:41:11.430Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:41:16.730Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T16:41:16.733Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T16:41:16.733Z"}
+{"0":"\"","1":"p","10":"s","11":" ","12":"r","13":"e","14":"q","15":"u","16":"i","17":"r","18":"e","19":"d","2":"o","3":"s","4":"t","5":"I","6":"d","7":"\"","8":" ","9":"i","level":"error","message":"get single post error","service":"post-service","timestamp":"2025-08-25T16:41:16.736Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:41:17.791Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T16:41:17.793Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T16:41:17.793Z"}
+{"0":"\"","1":"p","10":"s","11":" ","12":"r","13":"e","14":"q","15":"u","16":"i","17":"r","18":"e","19":"d","2":"o","3":"s","4":"t","5":"I","6":"d","7":"\"","8":" ","9":"i","level":"error","message":"get single post error","service":"post-service","timestamp":"2025-08-25T16:41:17.794Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:42:10.280Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:42:10.298Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:42:10.300Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:42:10.867Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:42:10.868Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:42:16.489Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T16:42:16.491Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T16:42:16.492Z"}
+{"0":"\"","1":"p","10":"s","11":" ","12":"r","13":"e","14":"q","15":"u","16":"i","17":"r","18":"e","19":"d","2":"o","3":"s","4":"t","5":"I","6":"d","7":"\"","8":" ","9":"i","level":"error","message":"get single post error","service":"post-service","timestamp":"2025-08-25T16:42:16.498Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:42:17.609Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T16:42:17.611Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T16:42:17.612Z"}
+{"0":"\"","1":"p","10":"s","11":" ","12":"r","13":"e","14":"q","15":"u","16":"i","17":"r","18":"e","19":"d","2":"o","3":"s","4":"t","5":"I","6":"d","7":"\"","8":" ","9":"i","level":"error","message":"get single post error","service":"post-service","timestamp":"2025-08-25T16:42:17.613Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:42:35.836Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:42:35.847Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:42:35.850Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:42:36.363Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:42:36.363Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:42:40.979Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T16:42:40.981Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T16:42:40.982Z"}
+{"0":"\"","1":"p","10":"s","11":" ","12":"r","13":"e","14":"q","15":"u","16":"i","17":"r","18":"e","19":"d","2":"o","3":"s","4":"t","5":"I","6":"d","7":"\"","8":" ","9":"i","level":"error","message":"get single post error","service":"post-service","timestamp":"2025-08-25T16:42:40.985Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:43:51.703Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:43:51.714Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:43:51.718Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:43:52.229Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:43:52.229Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T16:43:55.921Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T16:43:55.923Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T16:43:55.925Z"}
+{"kind":"ObjectId","level":"error","message":"get single post error Cast to ObjectId failed for value \"500\" (type string) at path \"_id\" for model \"post\"","path":"_id","reason":{},"service":"post-service","stack":"CastError: Cast to ObjectId failed for value \"500\" (type string) at path \"_id\" for model \"post\"\n    at SchemaObjectId.cast (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongoose/lib/schema/objectId.js:251:11)\n    at SchemaObjectId.SchemaType.applySetters (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongoose/lib/schemaType.js:1258:12)\n    at SchemaObjectId.SchemaType.castForQuery (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongoose/lib/schemaType.js:1676:17)\n    at cast (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongoose/lib/cast.js:390:32)\n    at model.Query.Query.cast (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongoose/lib/query.js:5055:12)\n    at model.Query.Query._castConditions (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongoose/lib/query.js:2351:10)\n    at model.Query._findOne (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongoose/lib/query.js:2674:8)\n    at model.Query.exec (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/mongoose/lib/query.js:4604:80)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async getSinglePostController (/Users/home/Desktop/projects/social-media-microservices/post-services/src/controllers/postController.ts:146:22)","stringValue":"\"500\"","timestamp":"2025-08-25T16:43:55.946Z","value":"500","valueType":"string"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:53:05.623Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:53:05.640Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:53:05.648Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:53:06.192Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:53:06.193Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:53:20.258Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:53:20.271Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:53:20.274Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:53:20.731Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:53:20.732Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:53:32.412Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:53:32.423Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:53:32.427Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:53:32.881Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:53:32.882Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:53:37.566Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:53:37.576Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:53:37.577Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:53:38.051Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:53:38.051Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:53:42.598Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:53:42.613Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:53:42.622Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:53:43.088Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:53:43.089Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:53:52.055Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:53:52.066Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:53:52.067Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:53:52.566Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:53:52.566Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:53:58.546Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:53:58.559Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:53:58.561Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:54:03.222Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:54:03.238Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:54:03.460Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:54:03.925Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:54:03.925Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:54:33.324Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:54:33.335Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:54:33.336Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:54:33.960Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:54:33.960Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:55:03.617Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:55:03.628Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:55:03.630Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:55:04.103Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:55:04.104Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:55:21.598Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:55:21.609Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:55:21.611Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:55:22.100Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:55:22.101Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:56:00.291Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:56:00.335Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:56:00.346Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:56:05.842Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:56:05.853Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:56:05.854Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:56:06.331Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:56:06.332Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:56:18.194Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:56:18.207Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:56:18.210Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:56:18.674Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:56:18.675Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:56:25.041Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:56:25.051Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:56:25.052Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:56:25.519Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:56:25.519Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:56:41.974Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:56:41.988Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:56:41.990Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:56:42.488Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:56:42.489Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:57:00.967Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:57:00.978Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:57:00.979Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:57:01.496Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:57:01.497Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:57:06.890Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:57:06.902Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:57:06.934Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:57:07.351Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:57:07.351Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:57:33.188Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:57:33.199Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:57:33.201Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:57:33.859Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:57:33.860Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:58:13.174Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:58:13.184Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:58:13.187Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:58:13.670Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:58:13.671Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:58:39.911Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:58:39.921Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:58:39.923Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:58:42.172Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:58:42.183Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:58:42.188Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:58:42.734Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:58:42.734Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:58:45.416Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:58:45.429Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:58:45.430Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:58:45.904Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:58:45.905Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:58:54.492Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:58:54.506Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:58:54.509Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:58:54.968Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:58:54.968Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:58:59.659Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:58:59.669Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:58:59.670Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:59:00.152Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:59:00.153Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:59:04.296Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:59:04.307Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:59:04.308Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:59:04.827Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:59:04.828Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:59:06.653Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:59:06.669Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:59:06.672Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:59:08.447Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:59:08.457Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:59:08.459Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:59:08.951Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:59:08.952Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:59:17.606Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:59:17.620Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:59:17.622Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:59:18.130Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:59:18.131Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:59:21.155Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:59:21.165Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:59:21.166Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:59:21.667Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:59:21.667Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T16:59:40.372Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T16:59:40.382Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T16:59:40.384Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T16:59:40.877Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T16:59:40.877Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:00:19.372Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:00:19.406Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:00:19.407Z"}
+{"level":"error","message":"get single post error Invalid post Id","service":"post-service","stack":"Error: Invalid post Id\n    at getSinglePostController (/Users/home/Desktop/projects/social-media-microservices/post-services/src/controllers/postController.ts:130:19)\n    at Layer.handleRequest (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/lib/layer.js:152:17)\n    at next (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/lib/route.js:117:3)\n    at handle (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:435:11)\n    at Layer.handleRequest (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/lib/layer.js:152:17)\n    at /Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:295:15\n    at param (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:600:14)\n    at param (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:610:14)\n    at processParams (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:664:3)","timestamp":"2025-08-25T17:00:19.412Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:00:21.221Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:00:21.222Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:00:21.222Z"}
+{"level":"error","message":"get single post error Invalid post Id","service":"post-service","stack":"Error: Invalid post Id\n    at getSinglePostController (/Users/home/Desktop/projects/social-media-microservices/post-services/src/controllers/postController.ts:130:19)\n    at Layer.handleRequest (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/lib/layer.js:152:17)\n    at next (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/lib/route.js:117:3)\n    at handle (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:435:11)\n    at Layer.handleRequest (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/lib/layer.js:152:17)\n    at /Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:295:15\n    at param (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:600:14)\n    at param (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:610:14)\n    at processParams (/Users/home/Desktop/projects/social-media-microservices/post-services/node_modules/router/index.js:664:3)","timestamp":"2025-08-25T17:00:21.223Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:00:46.321Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:00:46.332Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:00:46.333Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:00:46.872Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:00:46.872Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:01:13.138Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:01:13.153Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:01:13.156Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:01:13.625Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:01:13.626Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:01:21.327Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:01:21.337Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:01:21.339Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:01:21.833Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:01:21.833Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:01:28.600Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:01:28.610Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:01:28.611Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:01:51.808Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:01:51.810Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:01:51.811Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:01:53.381Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:01:53.382Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:01:53.383Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:02:03.828Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:02:03.830Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:02:03.831Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:02:07.184Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:02:07.185Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:02:07.186Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:02:08.261Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:02:08.264Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:02:08.265Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:03:10.974Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:03:10.993Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:03:11.003Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:03:11.600Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:03:11.600Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:03:19.968Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:03:20.080Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:03:20.081Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:03:21.625Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:03:21.637Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:03:21.637Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:03:22.933Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:03:22.945Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:03:22.946Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:03:23.962Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:03:23.963Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:03:23.963Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:03:24.886Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:03:24.888Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:03:24.888Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:03:25.730Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:03:25.730Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:03:25.730Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:03:26.690Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:03:26.691Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:03:26.691Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:04:09.479Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:04:09.491Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:04:09.493Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:04:09.952Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:04:09.952Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:04:21.920Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:04:21.931Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:04:21.933Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:04:22.412Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:04:22.413Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:04:49.231Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:04:49.248Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:04:49.300Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:04:49.721Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:04:49.722Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:04:54.987Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:04:55.010Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:04:55.023Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:04:55.506Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:04:55.507Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:04:59.042Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:04:59.047Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:04:59.049Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:04:59.993Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:04:59.995Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:04:59.996Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:00.811Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:00.813Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:00.813Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:01.633Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:01.639Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:01.639Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:02.529Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:02.529Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:02.529Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:03.965Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:03.966Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:03.966Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:05.313Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:05.315Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:05.315Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:06.613Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:06.615Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:06.615Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:07.546Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:07.549Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:07.549Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:08.145Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:08.145Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:08.145Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:08.745Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:08.746Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:08.746Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:09.394Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:09.394Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:09.395Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:10.169Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:10.173Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:10.173Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:10.762Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:10.763Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:10.763Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:11.209Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:11.213Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:11.215Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:11.375Z"}
+{"level":"info","message":"request from /api/post/getPosts having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:11.375Z"}
+{"level":"info","message":"user hit the get all post controller","service":"post-service","timestamp":"2025-08-25T17:05:11.375Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:15.649Z"}
+{"level":"info","message":"request from /api/post/getPost/500 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:15.653Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:05:15.654Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:29.013Z"}
+{"level":"info","message":"request from /api/post/getPost/68abdafb001d61b7988574a5 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:29.015Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:05:29.015Z"}
+{"level":"info","message":"single post obtained","service":"post-service","timestamp":"2025-08-25T17:05:29.055Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:33.780Z"}
+{"level":"info","message":"request from /api/post/getPost/68abdafb001d61b7988574a5 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:33.782Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:05:33.782Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:35.109Z"}
+{"level":"info","message":"request from /api/post/getPost/68abdafb001d61b7988574a5 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:35.110Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:05:35.111Z"}
+{"level":"info","message":"single post obtained","service":"post-service","timestamp":"2025-08-25T17:05:35.156Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:36.058Z"}
+{"level":"info","message":"request from /api/post/getPost/68abdafb001d61b7988574a5 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:36.058Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:05:36.058Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:37.026Z"}
+{"level":"info","message":"request from /api/post/getPost/68abdafb001d61b7988574a5 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:37.026Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:05:37.027Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:37.798Z"}
+{"level":"info","message":"request from /api/post/getPost/68abdafb001d61b7988574a5 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:37.799Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:05:37.799Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:05:39.183Z"}
+{"level":"info","message":"request from /api/post/getPost/68abdafb001d61b7988574a5 having a method of GET","service":"post-service","timestamp":"2025-08-25T17:05:39.184Z"}
+{"level":"info","message":"user hit the get single post controller","service":"post-service","timestamp":"2025-08-25T17:05:39.184Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:07:29.953Z"}
+{"level":"info","message":"request from /api/post/deletePost/68abdafb001d61b7988574a5 having a method of DELETE","service":"post-service","timestamp":"2025-08-25T17:07:29.955Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:08:34.620Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:08:34.632Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:08:34.634Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:08:35.191Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:08:35.191Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:08:39.519Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:08:39.529Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:08:39.531Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:08:40.006Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:08:40.007Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:09:08.318Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:09:08.330Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:09:08.332Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:09:11.949Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:09:11.965Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:09:11.967Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:09:12.407Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:09:12.407Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:09:24.270Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:09:24.282Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:09:24.284Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:09:24.743Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:09:24.744Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:09:34.382Z"}
+{"level":"info","message":"request from /api/post/deletePost/68abdafb001d61b7988574a5 having a method of DELETE","service":"post-service","timestamp":"2025-08-25T17:09:34.385Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:09:35.808Z"}
+{"level":"info","message":"request from /api/post/deletePost/68abdafb001d61b7988574a5 having a method of DELETE","service":"post-service","timestamp":"2025-08-25T17:09:35.809Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-25T17:09:54.880Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-25T17:09:54.893Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-25T17:09:54.896Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-25T17:09:55.431Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-25T17:09:55.431Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:10:05.024Z"}
+{"level":"info","message":"request from /api/post/deletePost/68abdafb001d61b7988574a5 having a method of DELETE","service":"post-service","timestamp":"2025-08-25T17:10:05.026Z"}
+{"level":"info","message":"user hit the delete controller","service":"post-service","timestamp":"2025-08-25T17:10:05.027Z"}
+{"level":"warn","message":"Checking for rate limit","service":"post-service","timestamp":"2025-08-25T17:10:10.032Z"}
+{"level":"info","message":"request from /api/post/deletePost/68abdafb001d61b7988574a5 having a method of DELETE","service":"post-service","timestamp":"2025-08-25T17:10:10.036Z"}
+{"level":"info","message":"user hit the delete controller","service":"post-service","timestamp":"2025-08-25T17:10:10.036Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:24:15.704Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:24:15.725Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:24:15.749Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:24:16.305Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:24:16.305Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:29:24.577Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:29:24.600Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:29:24.619Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:29:28.459Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:29:28.482Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:29:28.485Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:29:33.552Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:29:33.568Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:29:33.574Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:29:34.026Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:29:34.027Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:29:36.230Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:29:36.250Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:29:36.252Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:29:36.721Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:29:36.722Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:29:53.018Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:29:53.042Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:29:53.096Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:29:53.532Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:29:53.533Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:30:10.496Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:30:10.518Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:30:10.520Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:30:12.295Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:30:12.307Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:30:12.310Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:30:15.127Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:30:15.144Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:30:15.147Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:30:15.638Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:30:15.639Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:30:26.234Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:30:26.271Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:30:26.309Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:30:26.726Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:30:26.726Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:30:47.274Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:30:47.284Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:30:47.292Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:30:49.504Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:30:49.531Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:30:49.533Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:30:49.984Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:30:49.984Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:31:00.355Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:31:00.370Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:31:00.377Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:31:00.843Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:31:00.843Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:31:02.867Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:31:02.883Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:31:02.886Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:31:07.976Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:31:07.996Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:31:07.998Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:31:08.458Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:31:08.459Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:31:20.484Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:31:20.504Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:31:20.509Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:31:20.948Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:31:20.948Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:31:27.782Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:31:27.808Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:31:27.813Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:31:28.356Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:31:28.356Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:31:35.530Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:31:35.547Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:31:35.550Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:31:36.026Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:31:36.026Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:31:39.630Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:31:39.660Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:31:39.662Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:31:40.104Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:31:40.104Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:01.742Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:01.759Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:01.760Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:32:02.256Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:32:02.256Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:06.090Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:06.112Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:06.114Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:32:06.654Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:32:06.655Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:11.366Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:11.381Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:11.383Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:32:11.843Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:32:11.843Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:19.337Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:19.353Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:19.355Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:32:20.024Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:32:20.032Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:25.757Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:25.775Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:25.776Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:32:26.244Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:32:26.244Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:35.668Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:35.686Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:35.690Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:32:36.233Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:32:36.234Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:39.521Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:39.542Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:39.543Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:32:40.016Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:32:40.016Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:46.238Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:46.252Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:46.254Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:51.197Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:51.214Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:51.220Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:32:51.656Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:32:51.657Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:57.133Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:57.148Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:57.155Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:32:59.596Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:32:59.615Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:32:59.622Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:33:00.081Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:33:00.082Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:33:07.487Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:33:07.502Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:33:07.505Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:33:09.264Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:33:09.280Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:33:09.282Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:33:09.769Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:33:09.770Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:33:12.697Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:33:12.712Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:33:12.713Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:33:20.396Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:33:20.405Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:33:20.407Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:33:20.962Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:33:20.963Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:33:25.157Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:33:25.177Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:33:25.179Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:33:28.732Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:33:28.750Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:33:28.755Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:33:29.232Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:33:29.233Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:33:59.778Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:33:59.797Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:33:59.801Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:00.265Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:00.266Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:06.990Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:07.012Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:07.029Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:07.490Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:07.491Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:20.298Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:20.313Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:20.315Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:20.829Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:20.829Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:23.087Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:23.096Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:23.097Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:23.631Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:23.631Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:27.821Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:27.837Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:27.839Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:28.331Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:28.331Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:31.751Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:31.768Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:31.769Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:32.232Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:32.232Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:38.187Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:38.208Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:38.209Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:38.662Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:38.663Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:43.600Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:43.616Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:43.618Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:44.127Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:44.127Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:47.834Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:48.132Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:48.152Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:48.604Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:48.605Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:50.290Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:50.300Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:50.301Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:34:50.796Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:34:50.797Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:34:57.938Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:34:57.975Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:34:57.977Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:35:06.758Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:35:06.773Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:35:06.775Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:35:07.261Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:35:07.262Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:35:19.335Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:35:19.354Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:35:19.356Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:35:19.844Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:35:19.845Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:02.985Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:03.005Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:03.007Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:36:03.590Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:36:03.591Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:06.778Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:06.797Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:06.799Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:36:07.273Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:36:07.274Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:09.391Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:09.408Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:09.411Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:36:09.872Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:36:09.872Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:15.931Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:15.948Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:15.954Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:36:16.467Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:36:16.467Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:21.571Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:21.588Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:21.590Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:36:22.072Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:36:22.074Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:24.084Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:24.102Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:24.103Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:36:24.584Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:36:24.585Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:28.285Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:28.304Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:28.307Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:30.953Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:30.976Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:30.977Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:36:31.427Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:36:31.427Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:43.346Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:43.367Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:43.370Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:36:43.851Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:36:43.852Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:36:52.184Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:36:52.233Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:36:52.256Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:36:52.705Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:36:52.705Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:37:05.311Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:37:05.333Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:37:05.337Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:37:05.773Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:37:05.773Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:37:14.683Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:37:14.699Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:37:14.707Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:37:21.325Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:37:21.345Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:37:21.347Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:37:21.888Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:37:21.888Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:37:28.782Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:37:28.809Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:37:28.835Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:37:39.847Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:37:39.868Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:37:39.870Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:37:40.376Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:37:40.377Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:37:47.162Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:37:47.180Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:37:47.183Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:37:47.648Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:37:47.649Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:37:59.597Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:37:59.616Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:37:59.619Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:38:00.060Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:38:00.060Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:38:10.680Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:38:10.696Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:38:10.699Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:38:11.177Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:38:11.178Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:38:19.748Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:38:19.775Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:38:19.779Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:38:20.232Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:38:20.233Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:38:22.587Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:38:22.603Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:38:22.605Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:38:23.105Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:38:23.105Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:38:28.323Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:38:28.338Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:38:28.340Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:38:28.827Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:38:28.828Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:38:59.069Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:38:59.170Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:38:59.190Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:39:01.923Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:39:01.945Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:39:01.947Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:39:02.421Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:39:02.422Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:39:08.295Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:39:08.312Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:39:08.315Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:39:08.745Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:39:08.745Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:41:16.394Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:41:16.418Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:41:16.424Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:41:16.925Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:41:16.925Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:41:21.732Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:41:21.747Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:41:21.749Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:41:22.237Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:41:22.237Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T10:41:56.843Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:41:56.862Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:41:56.865Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T10:41:57.006Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:41:57.007Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:41:57.469Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:41:57.469Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T10:41:59.732Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:41:59.745Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:41:59.747Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T10:41:59.756Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:41:59.757Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:42:00.240Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:42:00.241Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T10:42:44.481Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:42:44.497Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:42:44.498Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T10:42:44.514Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:42:44.515Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:42:45.073Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:42:45.074Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T10:49:18.930Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T10:49:18.947Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T10:49:18.954Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T10:49:18.999Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T10:49:18.999Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T10:49:19.534Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T10:49:19.535Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:48:41.569Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:48:41.585Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:48:41.601Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:48:41.631Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:48:41.632Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:48:42.226Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:48:42.226Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:49:01.003Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:49:01.019Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:49:01.305Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:49:01.668Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:49:01.668Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:49:02.180Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:49:02.180Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:49:08.868Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:49:08.883Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:49:08.891Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:49:08.920Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:49:08.921Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:49:09.393Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:49:09.393Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:52:31.735Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:52:31.746Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:52:31.750Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:52:31.780Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:52:31.780Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:52:32.466Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:52:32.467Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:53:34.373Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:53:34.386Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:53:34.390Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:53:34.411Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:53:34.411Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:53:34.952Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:53:34.952Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:54:24.999Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:54:25.012Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:54:25.015Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:54:25.035Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:54:25.035Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:54:27.276Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:54:27.291Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:54:27.293Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:54:27.306Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:54:27.306Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:54:27.800Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:54:27.801Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:54:37.258Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:54:37.275Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:54:37.279Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:54:37.294Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:54:37.294Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:54:37.778Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:54:37.779Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:54:45.688Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:54:45.702Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:54:45.704Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:54:45.717Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:54:45.717Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:54:46.177Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:54:46.178Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:54:52.801Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:54:52.824Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:54:52.825Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:54:52.844Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:54:52.845Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:54:53.327Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:54:53.327Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:54:57.409Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:54:57.422Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:54:57.426Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:54:57.445Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:54:57.446Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:54:57.916Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:54:57.916Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:55:02.710Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:55:02.727Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:55:02.730Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:55:02.740Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:55:02.740Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:55:03.270Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:55:03.270Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:55:38.643Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:55:38.657Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:55:38.659Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:55:38.676Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:55:38.676Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:55:39.151Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:55:39.151Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:55:41.684Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:55:41.699Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:55:41.702Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:55:41.717Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:55:41.718Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:55:42.231Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:55:42.232Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:55:46.542Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:55:46.553Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:55:46.556Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:55:46.573Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:55:46.573Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:55:47.434Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:55:47.435Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:55:54.858Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:55:54.872Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:55:54.879Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:55:54.890Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:55:54.891Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:55:55.416Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:55:55.417Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:55:59.871Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:55:59.876Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:55:59.883Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:55:59.898Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:55:59.899Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:56:00.371Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:56:00.371Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:56:10.320Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:56:10.332Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:56:10.335Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:56:10.350Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:56:10.350Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:56:12.251Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:56:12.269Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:56:12.271Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:56:12.285Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:56:12.286Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:56:12.750Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:56:12.750Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T11:56:50.339Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T11:56:50.355Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T11:56:50.357Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T11:56:50.409Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T11:56:50.421Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T11:56:51.184Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T11:56:51.185Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T12:23:15.514Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T12:23:15.534Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T12:23:15.542Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T12:23:15.587Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T12:23:15.587Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T12:23:16.148Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T12:23:16.148Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T12:31:31.962Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T12:31:31.978Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T12:31:32.057Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T12:31:32.089Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T12:31:32.090Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T12:31:32.688Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T12:31:32.688Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T12:31:37.108Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T12:31:37.123Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T12:31:37.134Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T12:31:37.143Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T12:31:37.143Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T12:31:37.755Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T12:31:37.756Z"}
+{"level":"info","message":"Connection to rabbitmq started","service":"post-service","timestamp":"2025-08-26T12:32:34.076Z"}
+{"level":"info","message":"Successfully connected to Redis","service":"post-service","timestamp":"2025-08-26T12:32:34.090Z"}
+{"level":"info","message":"Redis client is ready","service":"post-service","timestamp":"2025-08-26T12:32:34.095Z"}
+{"level":"info","message":"Rabbitmq connection made successfully","service":"post-service","timestamp":"2025-08-26T12:32:34.109Z"}
+{"level":"info","message":"DB connection started","service":"post-service","timestamp":"2025-08-26T12:32:34.110Z"}
+{"level":"info","message":"MongoDb  connected successfully","service":"post-service","timestamp":"2025-08-26T12:32:34.636Z"}
+{"level":"info","message":"App started at port 9001","service":"post-service","timestamp":"2025-08-26T12:32:34.636Z"}

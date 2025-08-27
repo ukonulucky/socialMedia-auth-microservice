@@ -11,7 +11,7 @@ const postSchema = new mongoose.Schema<postSchemaType>(
     content: {
       type: String,
       required: true,
-      unique: true,
+
     },
     imageId: [
       {

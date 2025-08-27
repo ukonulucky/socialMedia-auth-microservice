@@ -9,7 +9,11 @@ import { RateLimiterRedis } from "rate-limiter-flexible"
 import { connectRedisDbFunc } from "./confiq/connectRedis"
 import postRouter from "./routes/postRoutes"
 
-import { Redis } from "ioredis"
+
+import { CustomRequest } from "./types"
+import { connectToRabbitMqFunc } from "./confiq/rabbitmqConnect"
+
+
 
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -18,10 +22,6 @@ console.log("environment variables", process.env.REDIS_URL)
 app.use(helmet())
 app.use(cors())
 app.use(express.json())
-
-interface CustomRequest extends Request {
-    redisClient?: Redis;
-}
 
 
 app.use((req: CustomRequest, res: Response, next: NextFunction) => {
@@ -79,9 +79,10 @@ app.use("/api/post", (req:CustomRequest, res, next) => {
 
 
 
+
 app.listen(PORT, async() => { 
     try {
-     
+       await  connectToRabbitMqFunc()
         const res = await dbConnectFunc()
         if (res) { 
             logger.info("MongoDb  connected successfully")
@@ -91,6 +92,6 @@ app.listen(PORT, async() => {
     } catch (error) {
         logger.error(`Application error, ${error}`)
         console.log(`Application erorr occured`, error)
-        process.exit()
+        process.exit(1)
     }
 })
