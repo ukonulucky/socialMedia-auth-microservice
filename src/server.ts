@@ -7,7 +7,7 @@ import dbConnectFunc from "./confiq/dbConnect"
 import helmet from "helmet"
 import { RateLimiterRedis } from "rate-limiter-flexible"
 import { connectRedisDbFunc } from "./confiq/connectRedis"
-import postRouter from "./routes/postRoutes"
+
 
 
 import { CustomRequest } from "./types"
@@ -72,10 +72,10 @@ app.get("/", (req, res) => {
     console.log("Root route accessed");
     res.send(`Server for product running on port ${PORT}`)
  })
-app.use("/api/post", (req:CustomRequest, res, next) => {
+/* app.use("/api/post", (req:CustomRequest, res, next) => {
     req.redisClient = redisClient 
     next()
- }, postRouter)
+ }, postRouter) */
 
 
 

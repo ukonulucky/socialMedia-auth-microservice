@@ -32,7 +32,28 @@ export type getSinglePostType = {
     postId: string,
  
 }
+
+
+export type paymentSchemaType = {
+    paymentIntentId: string,
+  amount: number,
+  status:'created'| 'succeeded' |'failed',
+  userId: MongooseIdType,
+  groupId: MongooseIdType,
+  transactionId: string,
+  paymentIntentSecret: string,
+
+}
+
+
 export type MongooseIdType = mongoose.Types.ObjectId;
 
 
 
+export interface CustomePaymentReq extends Request { 
+    amount: number,
+    email: string,
+    name: string,
+    groupId: string,
+    userId: string
+}

@@ -9,7 +9,7 @@ const logger = winston.createLogger({
         winston.format.json()
     ),
     defaultMeta: {
-        service:"post-service"
+        service:"payment-service"
     },
     transports: [
         new winston.transports.Console({
