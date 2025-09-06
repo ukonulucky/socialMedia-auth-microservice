@@ -33,7 +33,7 @@ export const createPaymentIntentValidation = (data: CustomePaymentReq) => {
     name: Joi.string().required(),
     amount: Joi.string().required(),
     groupId: Joi.string().required(),
-    userId: Joi.string().email().required(),
+    userId: Joi.string().required()
   });
   return schema.validate(data);
 };

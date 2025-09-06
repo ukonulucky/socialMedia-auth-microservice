@@ -36,13 +36,19 @@ export type getSinglePostType = {
 
 export type paymentSchemaType = {
     paymentIntentId: string,
-  amount: number,
+    name: string,
+    amount: number,
+    userId: string,
+  email: string,
   status:'created'| 'succeeded' |'failed',
-  userId: MongooseIdType,
   groupId: MongooseIdType,
   transactionId: string,
-  paymentIntentSecret: string,
-
+    paymentIntentSecret: string,
+    chargeStatus: 'succeeded' | 'failed' | 'pending',
+    paymentMethod: string,
+    currency: string,
+    description: string,
+    createdAt: Date
 }
 
 

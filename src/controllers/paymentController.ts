@@ -13,7 +13,9 @@ const stripe = new Stripe(process.env.STRIP_SECRETE_KEY as string);
 export const createPaymentIntent:RequestHandler = async (req, res) => {
   
   const { error } = createPaymentIntentValidation(req.body);
-    if (error) {
+  console.log("request body",req.body)
+  if (error) {
+      console.log("paymentIntent body", req.body)
       logger.error("payment request body error", error.details[0].message);
       res.status(400).json({
         message: error.details[0].message,
@@ -31,7 +33,8 @@ export const createPaymentIntent:RequestHandler = async (req, res) => {
     // create a customer
     const customer: Stripe.Customer = await stripe.customers.create({
       name,
-      email
+      email,
+      
   }, {idempotencyKey});
 
  const ephemeralKey = await stripe.ephemeralKeys.create(
@@ -48,19 +51,12 @@ export const createPaymentIntent:RequestHandler = async (req, res) => {
   description: `Payment for group ${groupId} by member ${userId}`,
   customer: customer.id
 })
+    console.log("paymentIntent", {  paymentIntentSecret: paymentIntent.client_secret,
+      ephemeralKeySecret: ephemeralKey.secret,
+      customerId: customer.id,
+      publishableKey: process.env.STRIP_PUBLIC_KEY
+    })
     
-
-    // Save the payment data (without confirming it yet)
-    const payment = new PaymentModel({
-      paymentIntentId: paymentIntent.id,
-      amount,
-      status: 'created',
-      userEmail: email,
-      groupId,
-      paymentIntentSecret: paymentIntent.client_secret,
-    });
-
-    await payment.save();
     res.status(200).json({
       paymentIntentSecret: paymentIntent.client_secret,
       ephemeralKeySecret: ephemeralKey.secret,
@@ -96,7 +92,7 @@ export const getPaymentHistory:RequestHandler = async (req, res) => {
     const payments = await PaymentModel.find({ userId }); // Assuming userId is stored in payments
     res.status(200).json(payments);
   } catch (err) {
-    console.error('Error fetching payment history:', error);
+    console.error('Error fetching payment history:', err);
     logger.error(err)
       if (err instanceof Error) {
         logger.error(err.message)
@@ -115,31 +111,112 @@ export const getPaymentHistory:RequestHandler = async (req, res) => {
 };
 
 // Stripe Webhook to listen for payment success
-export const stripeWebhook:RequestHandler = async (req, res) => {
+export const stripeWebhookController:RequestHandler = async (req, res) => {
+
+
+//charge.updated
   const sig = req.headers['stripe-signature'];
 
   let event;
 
   try {
-    event = stripe.webhooks.constructEvent(
-      req.body,
-      sig,
-      process.env.STRIPE_WEBHOOK_SECRET
-    );
+    event = stripe.webhooks.constructEvent(req.body, sig!, process.env.STRIP_WEBHOOK_ENDPOINT_SECRET as string);
+   /*  console.log("webhook event", event) */
+
+     // Handle the event types you are interested in
+     switch (event.type) {
+      case 'customer.created':
+        const customerCreated = event.data.object;
+        const userId = customerCreated.id; // You can store this userId or link it to your app's user
+        const userEmail = customerCreated.email;
+        const userName = customerCreated.name;
+        
+        // Create a new payment document with userId and other details
+        await PaymentModel.updateOne(
+          { userId },
+          {
+            $set: {
+              userId, 
+              email: userEmail,
+              name: userName
+            },
+            $setOnInsert: { createdAt: new Date() }
+          },
+          { upsert: true }
+        );
+        console.log('Customer created:', customerCreated.id);
+        break;
+
+      case 'payment_intent.created':
+        const paymentIntentCreated = event.data.object;
+        await PaymentModel.updateOne(
+          { paymentIntentId: paymentIntentCreated.id },
+          {
+            $set: {
+              paymentIntentId: paymentIntentCreated.id,
+              amount: paymentIntentCreated.amount,
+              status: 'created',
+              paymentIntentSecret: paymentIntentCreated.client_secret,
+              currency: paymentIntentCreated.currency,
+            },
+            $setOnInsert: { createdAt: new Date() }, // Only set on insert
+          },
+          { upsert: true }  // Insert if not found
+        );
+        console.log('PaymentIntent created:', paymentIntentCreated.id);
+        break;
+
+      case 'payment_intent.succeeded':
+        const paymentIntentSucceeded = event.data.object;
+       
+        console.log('PaymentIntent succeeded:', paymentIntentSucceeded);
+        break;
+
+      case 'charge.updated':
+        const chargeUpdated = event.data.object;
+        await PaymentModel.updateOne(
+          { transactionId: chargeUpdated.id },
+          {
+            $set: {
+              chargeStatus: chargeUpdated.status,
+            },
+          }
+        );
+        console.log('Charge updated:', chargeUpdated.id);
+        break;
+
+      default:
+        console.log(`Unhandled event type: ${event.type}`);
+    }
+
+    // Acknowledge receipt of the event
+    res.json({ received: true });
+
   } catch (err) {
-    console.error('Webhook signature verification failed:', err);
-    return res.status(400).send(`Webhook Error: ${err.message}`);
+    console.error('Error from webhook',err);
+    logger.error(err)
+      if (err instanceof Error) {
+        logger.error(err.message)
+          res.status(500).json({ 
+              message: err.message,
+              status: false
+        });
+      
+      } else {
+        res.status(500).json({ 
+            message: "Webhook Error:",
+            status: false
+      });
+      }
+  
   }
 
-  // Handle the event types you are interested in
-  if (event.type === 'payment_intent.succeeded') {
+ 
+ /*  if (event.type === 'payment_intent.succeeded') {
     const paymentIntent = event.data.object;
 
     // Update the payment status in DB
-    await PaymentModel.updateOne(
-      { paymentIntentId: paymentIntent.id },
-      { status: 'succeeded', transactionId: paymentIntent.charges.data[0].id }
-    );
+  
 
     console.log('PaymentIntent was successful:', paymentIntent.id);
   } else if (event.type === 'payment_intent.payment_failed') {
@@ -152,7 +229,7 @@ export const stripeWebhook:RequestHandler = async (req, res) => {
     );
 
     console.log('PaymentIntent failed:', paymentIntent.id);
-  }
+  } */
 
   // Acknowledge receipt of the event
   res.json({ received: true });

@@ -7,13 +7,9 @@ import dbConnectFunc from "./confiq/dbConnect"
 import helmet from "helmet"
 import { RateLimiterRedis } from "rate-limiter-flexible"
 import { connectRedisDbFunc } from "./confiq/connectRedis"
-
-
-
 import { CustomRequest } from "./types"
 import { connectToRabbitMqFunc } from "./confiq/rabbitmqConnect"
-
-
+import paymentRouter from "./routes/paymentRoutes"
 
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -21,16 +17,18 @@ console.log("environment variables", process.env.REDIS_URL)
 // middleware 
 app.use(helmet())
 app.use(cors())
-app.use(express.json())
 
+app.use((req, res, next) => {
+    if (req.originalUrl === '/api/payment/webhook') {
+      return next(); // Skip other parsers for webhook
+    }
+    express.json()(req, res, next);
+  });
 
 app.use((req: CustomRequest, res: Response, next: NextFunction) => {
     req.redisClient = redisClient;
     next();
 });
-
-
-
 
 // setting up a redis client
 const redisClient = connectRedisDbFunc()
@@ -72,10 +70,10 @@ app.get("/", (req, res) => {
     console.log("Root route accessed");
     res.send(`Server for product running on port ${PORT}`)
  })
-/* app.use("/api/post", (req:CustomRequest, res, next) => {
+app.use("/api/payment", (req:CustomRequest, res, next) => {
     req.redisClient = redisClient 
     next()
- }, postRouter) */
+ }, paymentRouter)
 
 
 

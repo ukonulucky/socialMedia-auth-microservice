@@ -1,15 +1,17 @@
 import express from "express"
-/* import { createPostController, deleteSinglePostController, getAllPostController, getSinglePostController } from "../controllers/postController" */
+
 import { authMiddleware } from "../middleware/authMiddleware"
+import { createPaymentIntent, stripeWebhookController } from "../controllers/paymentController"
 
-const postRouter = express.Router()
+const paymentRouter = express.Router()
 
-/* postRouter.use(authMiddleware) // this middleware will ensure users are authenticated
+/* paymentRouter.use(authMiddleware) */
+// this middleware will ensure users are authenticated
 
-postRouter.post("/createPost", createPostController)
-postRouter.get("/getPosts", getAllPostController)
-postRouter.get("/getPost/:postId", getSinglePostController)
-postRouter.delete("/deletePost/:postId", deleteSinglePostController)
- */
+paymentRouter.post("/webhook", express.raw({ type: 'application/json' }), stripeWebhookController)
 
-export default postRouter
+paymentRouter.post("/paymentIntent",createPaymentIntent)
+
+ 
+
+export default paymentRouter
